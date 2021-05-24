@@ -31,7 +31,7 @@
       <p class="lead">Data Augmentation based Non-parallel Voice Conversion with Frame-level Speaker Disentangler</p>
     </div>
     <table class="table">
-        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Converted Audio (Cross Gender)</font></th></tr>
+        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Converted Audio (All vocoded)</font></th></tr>
         <tr><th scope="col" colspan="4">He had no excuse for the feelings which were aroused in him.</th></tr>
         <tr>
             <td></td>
@@ -41,14 +41,14 @@
             <td>CLB->RMS</td>
         </tr>
         <tr>
-            <td>Source</td>
+            <td><font color="#FF9900">Source</font></td>
             <td><audio src="res/bdl_slt/mel_bdl_slt_vocode_a0115.wav" controls=""></audio></td>
             <td><audio src="res/slt_bdl/mel_slt_bdl_vocode_a0115.wav" controls=""></audio></td>
             <td><audio src="res/clb_rms/mel_clb_rms_vocode_a0115.wav" controls=""></audio></td>
             <td><audio src="res/rms_clb/mel_rms_clb_vocode_a0115.wav" controls=""></audio></td>
         </tr>
         <tr>
-            <td>Target</td>
+            <td><font color="#FF9900">Target</font></td>
             <td><audio src="res/slt_bdl/mel_slt_bdl_vocode_a0115.wav" controls=""></audio></td>
             <td><audio src="res/bdl_slt/mel_bdl_slt_vocode_a0115.wav" controls=""></audio></td>
             <td><audio src="res/rms_clb/mel_rms_clb_vocode_a0115.wav" controls=""></audio></td>
@@ -84,14 +84,14 @@
             <td>CLB->RMS</td>
         </tr>
         <tr>
-            <td>Source</td>
+            <td><font color="#FF9900">Source</font></td>
             <td><audio src="res/bdl_slt/mel_bdl_slt_vocode_a0105.wav" controls=""></audio></td>
             <td><audio src="res/slt_bdl/mel_slt_bdl_vocode_a0105.wav" controls=""></audio></td>
             <td><audio src="res/clb_rms/mel_clb_rms_vocode_a0105.wav" controls=""></audio></td>
             <td><audio src="res/rms_clb/mel_rms_clb_vocode_a0105.wav" controls=""></audio></td>
         </tr>
         <tr>
-            <td>Target</td>
+            <td><font color="#FF9900">Target</font></td>
             <td><audio src="res/slt_bdl/mel_slt_bdl_vocode_a0105.wav" controls=""></audio></td>
             <td><audio src="res/bdl_slt/mel_bdl_slt_vocode_a0105.wav" controls=""></audio></td>
             <td><audio src="res/rms_clb/mel_rms_clb_vocode_a0105.wav" controls=""></audio></td>
@@ -118,5 +118,49 @@
             <td><audio src="res/rms_clb/mel_rms_clb_loc2d_a0105.wav" controls=""></audio></td>
             <td><audio src="res/clb_rms/mel_clb_rms_loc2d_a0105.wav" controls=""></audio></td>
         </tr>
+        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Augmentation Audio (All vocoded)</font></th></tr>
+        <tr><th scope="col" colspan="4">Dad, do I remember it.</th></tr>
+        <tr>
+            <td></td>
+            <td>BDL->RMS</td>
+            <td>CLB->SLT</td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Source</font></td>
+            <td><audio src="res/rms_bdl_aug/orig_bdl_b0001.wav" controls=""></audio></td>
+            <td><audio src="res/slt_clb_aug/orig_clb_b0001.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Target</font></td>
+            <td><audio src="res/rms_bdl_aug/orig_rms_b0001.wav" controls=""></audio></td>
+            <td><audio src="res/slt_clb_aug/orig_slt_b0001.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td>Loc2D</td>
+            <td><audio src="res/rms_bdl_aug/aug_rms_b0001.wav" controls=""></audio></td>
+            <td><audio src="res/slt_clb_aug/aug_slt_b0001.wav" controls=""></audio></td>
+        </tr>
+        <tr><th scope="col" colspan="4">Author of the danger trail, Philip Steels, etc.</th></tr>
+        <tr>
+            <td></td>
+            <td>RMS->BDL</td>
+            <td>SLT->CLB</td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Source</font></td>
+            <td><audio src="res/rms_bdl_aug/orig_rms_a0001.wav" controls=""></audio></td>
+            <td><audio src="res/slt_clb_aug/orig_slt_a0001.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Target</font></td>
+            <td><audio src="res/rms_bdl_aug/orig_bdl_a0001.wav" controls=""></audio></td>
+            <td><audio src="res/slt_clb_aug/orig_clb_a0001.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td>Loc2D</td>
+            <td><audio src="res/rms_bdl_aug/aug_bdl_a0001.wav" controls=""></audio></td>
+            <td><audio src="res/slt_clb_aug/aug_clb_a0001.wav" controls=""></audio></td>
+        </tr>
+    </table>
   </div>
 </body>
