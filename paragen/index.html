@@ -29,6 +29,11 @@
     <div class="jumbotron mt-3">
       <h1>Audio Samples</h1>
       <p class="lead">Data Augmentation based Non-parallel Voice Conversion with Frame-level Speaker Disentangler</p>
+      Note:</br>
+      1. All the audios are vocoded using neural vocoder.</br>
+      2. The mel-spectrograms of <font color="#FF9900">Source/Target</font> are extracted from the original audios.</br>
+      3. The <font color="##6AAF84">Parallel Exp</font> are the models trained on the original parallel audios after DTW. But it might not be an upperbound since the recording parallel audios have different styles. The converted audio usually not follows the source style.</br>
+      4. The durations are stretched by the source and target speaking rate.
     </div>
     <table class="table">
         <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Converted Audio (All vocoded)</font></th></tr>
@@ -75,6 +80,13 @@
             <td><audio src="res/rms_clb/mel_rms_clb_loc2d_a0115.wav" controls=""></audio></td>
             <td><audio src="res/clb_rms/mel_clb_rms_loc2d_a0115.wav" controls=""></audio></td>
         </tr>
+        <tr>
+            <td><font color="#6AA84F">Parallel Exp</font></td>
+            <td><audio src="res/slt_bdl_prl/prl_slt_bdl_a0115.wav" controls=""></audio></td>
+            <td><audio src="res/bdl_slt_prl/prl_bdl_slt_a0115.wav" controls=""></audio></td>
+            <td><audio src="res/rms_clb_prl/prl_rms_clb_a0115.wav" controls=""></audio></td>
+            <td><audio src="res/clb_rms_prl/prl_clb_rms_a0115.wav" controls=""></audio></td>
+        </tr>
         <tr><th scope="col" colspan="4">Only, it is so wonderful, so almost impossible to believe.</th></tr>
         <tr>
             <td></td>
@@ -117,6 +129,13 @@
             <td><audio src="res/bdl_slt/mel_bdl_slt_loc2d_a0105.wav" controls=""></audio></td>
             <td><audio src="res/rms_clb/mel_rms_clb_loc2d_a0105.wav" controls=""></audio></td>
             <td><audio src="res/clb_rms/mel_clb_rms_loc2d_a0105.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#6AA84F">Parallel Exp</font></td>
+            <td><audio src="res/slt_bdl_prl/prl_slt_bdl_a0105.wav" controls=""></audio></td>
+            <td><audio src="res/bdl_slt_prl/prl_bdl_slt_a0105.wav" controls=""></audio></td>
+            <td><audio src="res/rms_clb_prl/prl_rms_clb_a0105.wav" controls=""></audio></td>
+            <td><audio src="res/clb_rms_prl/prl_clb_rms_a0105.wav" controls=""></audio></td>
         </tr>
         <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Augmentation Audio (All vocoded)</font></th></tr>
         <tr><th scope="col" colspan="4">Dad, do I remember it.</th></tr>
