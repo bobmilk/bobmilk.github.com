@@ -30,10 +30,36 @@
       <h1>Audio Samples</h1>
       <p class="lead">Neural Fusion For Voice Cloning</p>
       Note:</br>
-      1. All the synthetic audios are vocoded using neural vocoder trained on LJSpeech.</br>
+      1. All the synthetic audios are vocoded using neural vocoder trained on LJSpeech and LibriTTS training data.</br>
+      2. The texts of the test groups differ for different speakers. Therefore, the text are not the same for the synthetic audios.</br>
     </div>
     <table class="table">
-        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Demos</font></th></tr>
+        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Reconstruct Audios</font></th></tr>
+        <tr>
+            <td colspan="4"><font color="#000000">The reconstruct audios are generated using prosody embeddings extracted from the natural test audios to indicate the upper bound of the model.</font></td>
+        </tr>
+        <tr>
+            <td colspan="4"><font color="#000000">The test audios are unseen in the model training stage.</font></td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Natural</font></td>
+            <td><audio src="res/nat_4970_29093_000050_000008.wav" controls=""></audio></td>
+            <td><audio src="res/nat_7127_75946_000021_000000.wav" controls=""></audio></td>
+            <td><audio src="res/nat_2300_131720_000002_000003.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Vocoded</font></td>
+            <td><audio src="res/vocode_4970_29093_000050_000008.wav" controls=""></audio></td>
+            <td><audio src="res/vocode_7127_75946_000021_000000.wav" controls=""></audio></td>
+            <td><audio src="res/vocode_2300_131720_000002_000003.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#000000">Reconstruct</font></td>
+            <td><audio src="res/recons_4970_29093_000050_000008.wav" controls=""></audio></td>
+            <td><audio src="res/recons_7127_75946_000021_000000.wav" controls=""></audio></td>
+            <td><audio src="res/recons_2300_131720_000002_000003.wav" controls=""></audio></td>
+        </tr>
+        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Synthetic Audios (Female)</font></th></tr>
         <tr>
             <td><font color="#FF9900">Natural</font></td>
             <td><audio src="res/nat_5142_36600_000012_000003.wav" controls=""></audio></td>
@@ -69,6 +95,43 @@
             <td><audio src="res/lay1_5142_36600_000012_000003.wav" controls=""></audio></td>
             <td><audio src="res/lay1_4970_29093_000020_000001.wav" controls=""></audio></td>
             <td><audio src="res/lay1_1995_1836_000028_000001.wav" controls=""></audio></td>
+        </tr>
+        <tr><th scope="col" colspan="4"><font size="5" color="#0000FF">Synthetic Audios (Male)</font></th></tr>
+        <tr>
+            <td><font color="#FF9900">Natural</font></td>
+            <td><audio src="res/nat_2300_131720_000004_000000.wav" controls=""></audio></td>
+            <td><audio src="res/nat_2300_131720_000020_000008.wav" controls=""></audio></td>
+            <td><audio src="res/nat_7127_75947_000034_000000.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#FF9900">Vocoded</font></td>
+            <td><audio src="res/vocode_2300_131720_000004_000000.wav" controls=""></audio></td>
+            <td><audio src="res/vocode_2300_131720_000020_000008.wav" controls=""></audio></td>
+            <td><audio src="res/vocode_7127_75947_000034_000000.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#000000">FS2</font></td>
+            <td><audio src="res/fs2_2300_131720_000004_000000.wav" controls=""></audio></td>
+            <td><audio src="res/fs2_2300_131720_000020_000008.wav" controls=""></audio></td>
+            <td><audio src="res/fs2_7127_75947_000034_000000.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#000000">FS2-GMM</font></td>
+            <td><audio src="res/gmm_2300_131720_000004_000000.wav" controls=""></audio></td>
+            <td><audio src="res/gmm_2300_131720_000020_000008.wav" controls=""></audio></td>
+            <td><audio src="res/gmm_7127_75947_000034_000000.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#000000">Fusion</font></td>
+            <td><audio src="res/unit_2300_131720_000004_000000.wav" controls=""></audio></td>
+            <td><audio src="res/unit_2300_131720_000020_000008.wav" controls=""></audio></td>
+            <td><audio src="res/unit_7127_75947_000034_000000.wav" controls=""></audio></td>
+        </tr>
+        <tr>
+            <td><font color="#000000">Fusion-Refine</font></td>
+            <td><audio src="res/lay1_2300_131720_000004_000000.wav" controls=""></audio></td>
+            <td><audio src="res/lay1_2300_131720_000020_000008.wav" controls=""></audio></td>
+            <td><audio src="res/lay1_7127_75947_000034_000000.wav" controls=""></audio></td>
         </tr>
     </table>
   </div>
